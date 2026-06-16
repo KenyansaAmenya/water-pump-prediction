@@ -330,9 +330,6 @@ These metrics help reveal whether the model performs well across all classes, in
 
 ## Known Notes and Limitations
 
-- `requirements.txt` is currently empty even though the project requires several Python packages.
-- `models/best_model.pkl` is currently an empty file and should not be treated as a valid model artifact.
-- `notebooks/water_pump_analysis.ipynb` is currently empty.
 - `app/app.py` imports FastAPI, not Flask. Some older project instructions refer to Flask deployment, but the current application is a FastAPI service.
 - The API uses relative model paths, so the working directory matters when starting the server.
 - The cleaned dataset has fewer rows than the raw data because the cleaning workflow drops rows with selected missing values.
@@ -351,6 +348,3 @@ Potential next steps include:
 - Add Docker support for reproducible deployment.
 - Add CI checks for linting, tests, and notebook execution.
 
-## License and Data Attribution
-
-Add license and data-source details here before publishing the repository publicly. If this dataset comes from a competition, training programme, or external provider, include the provider name, usage terms, and any citation requirements.
